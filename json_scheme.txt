@@ -1,0 +1,16 @@
+root = json.hits.hits[0]._source.Vrvirksomhed.virksomhedMetadata
+
+navn: root.nyesteNavn.navn
+binavn: root.nyesteBinavne (array)
+virksomhedsform: root.nyesteVirksomhedsform.langBeskrivelse
+branche: root.nyesteHovedbrance.branchetekst
+status: root.sammensatStatus
+stiftelsesdato: root.stiftelsesDato
+kontaktoplysninger: root.nyesteKontaktoplysninger (array)
+adresse: 
+root.nyesteBeliggenhedsadresse.vejnavn
+root.nyesteBeliggenhedsadresse.husnummerFra
+root.nyesteBeliggenhedsadresse.postnummer
+root.nyesteBeliggenhedsadresse.postdistrikt
+
+
